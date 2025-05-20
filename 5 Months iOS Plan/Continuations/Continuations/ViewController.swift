@@ -12,7 +12,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let s = Date()
         print("Hi")
+        
+        print(Date().timeIntervalSince(s))
     }
 
 

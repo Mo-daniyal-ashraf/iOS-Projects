@@ -15,32 +15,31 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
-//        Task.detached {
-//            print(Thread.isMainThread ? "Amin" : "back")
-//
-//            await self.fetchAPi_1()
-//        }
-//
+        let s = Date()
+        Task.detached {
+            print(Thread.isMainThread ? "Amin" : "back")
+
+            await self.fetchAPi_1()
+        }
+        print(Date().timeIntervalSince(s))
 ////        fetchAPI_2()
     }
     
     @IBAction func send(_ sender: UIButton) {
         
-        
-//        Task {
-//
-//            await self.fetchAPi_1()
-//        }
-        
-        Task.detached {
-            
-            if let vc = await self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController {
-                print(Thread.isMainThread ? "Main" : "Back")
-                await self.navigationController?.pushViewController(vc, animated: true)
-            }
+        let s = Date()
+        Task {
+
+            await fetchAPI_2()
         }
-    }
+        print(Date().timeIntervalSince(s))
+//        Task.detached {
+//
+//            if let vc = await self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController {
+//                print(Thread.isMainThread ? "Main" : "Back")
+//                await self.navigationController?.pushViewController(vc, animated: true)
+//            }
+        }
     
 //    @MainActor
     func updateUi(with: String) {

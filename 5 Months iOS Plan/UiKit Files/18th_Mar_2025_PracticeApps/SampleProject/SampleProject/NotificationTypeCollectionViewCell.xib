@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NotificationTypeCollectionViewCell" id="PhU-4x-y3J" customClass="NotificationTypeCollectionViewCell" customModule="SampleProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="103" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LkP-tg-MJw">
+                <rect key="frame" x="0.0" y="0.0" width="103" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cmU-os-WEK">
+                        <rect key="frame" x="0.0" y="0.0" width="103" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SlX-XI-32o">
+                                <rect key="frame" x="17" y="15" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="SlX-XI-32o" secondAttribute="trailing" constant="44" id="BFJ-dK-hj3"/>
+                            <constraint firstItem="SlX-XI-32o" firstAttribute="leading" secondItem="cmU-os-WEK" secondAttribute="leading" constant="17" id="lup-bE-uVs"/>
+                            <constraint firstItem="SlX-XI-32o" firstAttribute="top" secondItem="cmU-os-WEK" secondAttribute="top" constant="15" id="sKN-8n-IY0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cmU-os-WEK" firstAttribute="top" secondItem="LkP-tg-MJw" secondAttribute="top" id="6dY-jj-eQz"/>
+                    <constraint firstAttribute="bottom" secondItem="cmU-os-WEK" secondAttribute="bottom" id="9dD-0N-ScC"/>
+                    <constraint firstItem="cmU-os-WEK" firstAttribute="leading" secondItem="LkP-tg-MJw" secondAttribute="leading" id="gcn-KC-zGw"/>
+                    <constraint firstAttribute="trailing" secondItem="cmU-os-WEK" secondAttribute="trailing" id="rmR-mB-uke"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="103" height="50"/>
+            <connections>
+                <outlet property="lbl" destination="SlX-XI-32o" id="e0S-7L-hXg"/>
+            </connections>
+            <point key="canvasLocation" x="60.305343511450381" y="14.788732394366198"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
