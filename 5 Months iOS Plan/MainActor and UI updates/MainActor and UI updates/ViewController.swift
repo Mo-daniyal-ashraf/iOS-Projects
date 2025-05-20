@@ -16,13 +16,30 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         
-        Task.detached {
-            print(Thread.isMainThread ? "Amin" : "back")
-
-            await self.fetchAPi_1()
-        }
+//        Task.detached {
+//            print(Thread.isMainThread ? "Amin" : "back")
+//
+//            await self.fetchAPi_1()
+//        }
+//
+////        fetchAPI_2()
+    }
+    
+    @IBAction func send(_ sender: UIButton) {
         
-//        fetchAPI_2()
+        
+//        Task {
+//
+//            await self.fetchAPi_1()
+//        }
+        
+        Task.detached {
+            
+            if let vc = await self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController {
+                print(Thread.isMainThread ? "Main" : "Back")
+                await self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
     }
     
 //    @MainActor
@@ -47,10 +64,10 @@ class ViewController: UIViewController {
                  if let str = json as? [String:Any],
                     let catfact = str["fact"] as? String {
                      
-//                     Task {
-//                        self.updateUi(with: catfact)
-//                     }
-//
+                     Task {
+                        self.updateUi(with: catfact)
+                     }
+
                  }
                  print("🐱 Cat Fact JSON: \(json)")
              } catch {
