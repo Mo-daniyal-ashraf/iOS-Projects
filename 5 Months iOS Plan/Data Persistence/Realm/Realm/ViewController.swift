@@ -6,7 +6,7 @@
 //
 
 import UIKit
-//import RealmSwift
+import RealmSwift
 
 class ViewController: UIViewController {
 
@@ -14,6 +14,8 @@ class ViewController: UIViewController {
         
         
         super.viewDidLoad()
+        
+        let realm = Realm()
         
 //        let user1 = User()
 //

@@ -10,9 +10,9 @@
       }
     },
     {
-      "identity" : "realm-swift?tab=readme-ov-file",
+      "identity" : "realm-swift",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/realm/realm-swift?tab=readme-ov-file",
+      "location" : "https://github.com/realm/realm-swift.git",
       "state" : {
         "revision" : "abbe849262c165dbd33b2d1c15c0f04783eb3311",
         "version" : "10.49.3"
