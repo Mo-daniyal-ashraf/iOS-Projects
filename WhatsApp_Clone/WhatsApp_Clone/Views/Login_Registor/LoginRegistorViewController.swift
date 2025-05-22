@@ -26,8 +26,13 @@ class LoginRegistorViewController: UIViewController {
     // MARK: IBAction
     @IBAction func nextBtn(_ sender: UIButton) {
         
-        let loginRegistor = LoginRegistorViewController(nibName: "LoginRegistorViewController", bundle: nil)
-        self.navigationController?.pushViewController(loginRegistor, animated: true)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        if let tabBarController = storyboard.instantiateViewController(withIdentifier: "MainTabBarController") as? UITabBarController {
+            navigationController?.setViewControllers([tabBarController], animated: true)
+            print(tabBarController)
+        }
+
     }
 }
 
@@ -40,7 +45,7 @@ extension LoginRegistorViewController {
         emailTextField.delegate = self
         
         self.nextbutton.layer.cornerRadius = nextbutton.frame.height / 2
-        navigationController?.isNavigationBarHidden = true
+//        navigationController?.isNavigationBarHidden = true
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard)))
     }
     

@@ -11,8 +11,9 @@ import RealmSwift
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
-
+        
         super.viewDidLoad()
+        self.tabBarItem.imageInsets = UIEdgeInsets(top: -2, left: 20, bottom: 20, right: 10)
     }
 }
 

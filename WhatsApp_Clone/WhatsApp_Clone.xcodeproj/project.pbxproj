@@ -19,6 +19,7 @@
 		AD1E80472DDF27AA00C0DA87 /* LoginRegistorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD1E80452DDF27AA00C0DA87 /* LoginRegistorViewController.xib */; };
 		AD1E804B2DDF2E9600C0DA87 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E80492DDF2E9600C0DA87 /* WelcomeScreenViewController.swift */; };
 		AD1E804C2DDF2E9600C0DA87 /* WelcomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD1E804A2DDF2E9600C0DA87 /* WelcomeScreenViewController.xib */; };
+		AD1E804E2DDF471500C0DA87 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E804D2DDF471500C0DA87 /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,6 +49,7 @@
 		AD1E80452DDF27AA00C0DA87 /* LoginRegistorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginRegistorViewController.xib; sourceTree = "<group>"; };
 		AD1E80492DDF2E9600C0DA87 /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
 		AD1E804A2DDF2E9600C0DA87 /* WelcomeScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeScreenViewController.xib; sourceTree = "<group>"; };
+		AD1E804D2DDF471500C0DA87 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		AD1E80402DDF18F000C0DA87 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				AD1E804D2DDF471500C0DA87 /* DataModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				AD1E80462DDF27AA00C0DA87 /* LoginRegistorViewController.swift in Sources */,
 				AD1E80212DDF114400C0DA87 /* AppDelegate.swift in Sources */,
 				AD1E804B2DDF2E9600C0DA87 /* WelcomeScreenViewController.swift in Sources */,
+				AD1E804E2DDF471500C0DA87 /* DataModel.swift in Sources */,
 				AD1E80232DDF114400C0DA87 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

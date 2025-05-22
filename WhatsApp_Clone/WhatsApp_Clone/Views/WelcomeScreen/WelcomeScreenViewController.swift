@@ -34,6 +34,6 @@ extension WelcomeScreenViewController {
     private func initialviewSetup() {
         
         self.nextbutton.layer.cornerRadius = nextbutton.frame.height / 2
-        navigationController?.isNavigationBarHidden = true
+//        navigationController?.isNavigationBarHidden = true
     }
 }
