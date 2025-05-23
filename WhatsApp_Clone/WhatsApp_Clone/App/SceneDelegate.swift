@@ -23,11 +23,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        if let userId = userId,
+        if let _ = userId,
            let tabBarController = storyboard.instantiateViewController(withIdentifier: "MainTabBarController") as? UITabBarController {
             
             window?.rootViewController = tabBarController
-            print(userId)
         } else {
             
             vc = WelcomeScreenViewController(nibName: "WelcomeScreenViewController", bundle: nil)

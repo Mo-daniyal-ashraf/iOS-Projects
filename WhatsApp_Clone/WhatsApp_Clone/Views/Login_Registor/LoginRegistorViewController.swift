@@ -17,7 +17,7 @@ class LoginRegistorViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     
-    var allChats: [Chat] = []
+    var allChats = List<Chat>()
     
     override func viewDidLoad() {
         

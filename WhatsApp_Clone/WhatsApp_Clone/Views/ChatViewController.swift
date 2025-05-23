@@ -14,7 +14,7 @@ class ChatViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var allChatDataSource: [Chat] = []
+    var allChatDataSource = List<Chat>()
     
     override func viewDidLoad() {
         
@@ -23,7 +23,7 @@ class ChatViewController: UIViewController {
     }
     
     @IBAction func logOutBtn(_ sender: UIButton) {
-        
+
         UserDefaults.standard.removeObject(forKey: "currentUserId")
     }
     
@@ -33,11 +33,30 @@ extension ChatViewController {
     
     private func inittialViewSetup() {
         
+        getAllChats()
         navigationController?.isNavigationBarHidden = true
         tableView.dataSource = self
         tableView.dataSource = self
         tableView.rowHeight = 74
         tableView.register(UINib(nibName: "ChatTableViewCell", bundle: nil), forCellReuseIdentifier: "ChatTableViewCell")
+    }
+    
+    private func getAllChats() {
+        
+        guard let currentUserId = UserDefaults.standard.string(forKey: "currentUserId") else {
+            print("No current user ID found in UserDefaults")
+            return
+        }
+        
+        do {
+            let realm = try Realm()
+            
+            let user = realm.object(ofType: User.self, forPrimaryKey: currentUserId)
+            allChatDataSource = user!.chats
+        } catch let error {
+            
+            print(error.localizedDescription)
+        }
     }
 }
 
