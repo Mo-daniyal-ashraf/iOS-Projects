@@ -11,29 +11,49 @@
         <!--Chats-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatViewController" id="BYZ-38-t0r" customClass="ChatViewController" customModule="WhatsApp_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="chats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UyB-lt-DRM">
-                                <rect key="frame" x="175" y="416" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EQw-or-n1T">
+                                <rect key="frame" x="0.0" y="163" width="393" height="606"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgT-91-96w">
+                                <rect key="frame" x="156" y="83" width="81" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="5cH-JO-9YO"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="LogOut"/>
+                                <connections>
+                                    <action selector="logOutBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lcY-Bu-l2E"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.058823529409999999" green="0.082352941176470587" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VgT-91-96w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="23O-We-agv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VgT-91-96w" secondAttribute="trailing" constant="156" id="F3M-HK-44R"/>
+                            <constraint firstItem="EQw-or-n1T" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JcD-Gh-nYU"/>
+                            <constraint firstItem="VgT-91-96w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="Vp2-Vn-yjC"/>
+                            <constraint firstItem="EQw-or-n1T" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="kZu-1h-Inq"/>
+                            <constraint firstItem="EQw-or-n1T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pQy-FH-JCo"/>
+                            <constraint firstItem="EQw-or-n1T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="104" id="zlK-dT-qrg"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Chats" image="Shape (1)" id="IpM-ze-NT7">
+                    <tabBarItem key="tabBarItem" title="Chats" image="bubble.left.fill" catalog="system" id="IpM-ze-NT7">
                         <color key="badgeColor" systemColor="systemYellowColor"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="tableView" destination="EQw-or-n1T" id="xpq-We-7nX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-825" y="711"/>
+            <point key="canvasLocation" x="-1054.1984732824426" y="706.33802816901414"/>
         </scene>
         <!--Updtaes-->
         <scene sceneID="sbw-nj-Apc">
@@ -45,11 +65,11 @@
                         <viewLayoutGuide key="safeArea" id="PH5-WO-0ba"/>
                         <color key="backgroundColor" red="0.058823529409999999" green="0.08235294118" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Updtaes" image="status" id="2cG-wb-Tth"/>
+                    <tabBarItem key="tabBarItem" title="Updtaes" image="gear.circle" catalog="system" id="2cG-wb-Tth"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kIs-A8-QOi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-82" y="711"/>
+            <point key="canvasLocation" x="-234" y="707"/>
         </scene>
         <!--communities-->
         <scene sceneID="IA4-kK-XI0">
@@ -61,13 +81,13 @@
                         <viewLayoutGuide key="safeArea" id="o69-bB-97E"/>
                         <color key="backgroundColor" red="0.058823529409999999" green="0.08235294118" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="communities" image="settings" id="Piw-Pi-qsc"/>
+                    <tabBarItem key="tabBarItem" title="communities" image="person.2.fill" catalog="system" id="Piw-Pi-qsc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2oh-gW-LBC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="692" y="711"/>
+            <point key="canvasLocation" x="540" y="707"/>
         </scene>
-        <!--Calls-->
+        <!--Cells-->
         <scene sceneID="gLp-ot-Qpz">
             <objects>
                 <viewController id="wue-ey-lrK" sceneMemberID="viewController">
@@ -77,11 +97,11 @@
                         <viewLayoutGuide key="safeArea" id="Ofq-Xb-s83"/>
                         <color key="backgroundColor" red="0.058823529409999999" green="0.08235294118" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calls" image="call" id="rm5-be-x4Y"/>
+                    <tabBarItem key="tabBarItem" title="Cells" image="phone.fill" catalog="system" id="rm5-be-x4Y"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8vi-OI-kE5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1462" y="711"/>
+            <point key="canvasLocation" x="1311" y="707"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6Fn-ce-DgR">
@@ -89,6 +109,7 @@
                 <tabBarController storyboardIdentifier="MainTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="PlD-i1-QTv" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1J5-pN-4AD">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -104,17 +125,14 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dEz-gb-KpY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.53435114503816" y="-28.169014084507044"/>
+            <point key="canvasLocation" x="-647" y="-30"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Shape (1)" width="47" height="32"/>
-        <image name="call" width="24" height="24"/>
-        <image name="settings" width="75" height="75"/>
-        <image name="status" width="27" height="26"/>
-        <systemColor name="systemGroupedBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="bubble.left.fill" catalog="system" width="128" height="110"/>
+        <image name="gear.circle" catalog="system" width="128" height="123"/>
+        <image name="person.2.fill" catalog="system" width="128" height="81"/>
+        <image name="phone.fill" catalog="system" width="128" height="114"/>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

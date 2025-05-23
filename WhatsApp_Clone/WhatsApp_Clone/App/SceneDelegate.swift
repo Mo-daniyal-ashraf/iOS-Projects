@@ -21,19 +21,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let userId = UserDefaults.standard.string(forKey: "currentUserId")
         var vc: UIViewController
         
-        if let id = userId {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        if let userId = userId,
+           let tabBarController = storyboard.instantiateViewController(withIdentifier: "MainTabBarController") as? UITabBarController {
             
-            vc = ViewController(nibName: "ViewController", bundle: nil)
-            print(id)
+            window?.rootViewController = tabBarController
+            print(userId)
         } else {
             
             vc = WelcomeScreenViewController(nibName: "WelcomeScreenViewController", bundle: nil)
+            window?.rootViewController = UINavigationController(rootViewController: vc)
         }
-        
-        window?.rootViewController = UINavigationController(rootViewController: vc)
-        
         window?.makeKeyAndVisible()
     }
+    
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

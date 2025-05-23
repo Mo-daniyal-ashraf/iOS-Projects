@@ -33,7 +33,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9m0-yB-bce">
                             <rect key="frame" x="0.0" y="0.0" width="240" height="36"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mobile Number" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Vc-G1-452">
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Vc-G1-452">
                                     <rect key="frame" x="5" y="0.0" width="235" height="36"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -148,11 +148,17 @@ number. Carrier charges may apply. What's my number?</string>
                 <constraint firstItem="f9K-QN-u51" firstAttribute="top" secondItem="knW-qo-G7R" secondAttribute="bottom" constant="19.670000000000002" id="SMq-Nh-AZq"/>
                 <constraint firstItem="RkQ-Ud-2pT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="76" id="SsW-eV-1bX"/>
                 <constraint firstItem="VcH-lA-FYq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="W6h-TD-PBC"/>
-                <constraint firstItem="RkQ-Ud-2pT" firstAttribute="top" secondItem="f9K-QN-u51" secondAttribute="bottom" constant="90" id="aFz-vu-7mJ"/>
+                <constraint firstItem="RkQ-Ud-2pT" firstAttribute="top" secondItem="f9K-QN-u51" secondAttribute="bottom" constant="90" id="aFz-vu-7mJ">
+                    <variation key="heightClass=compact-widthClass=regular" constant="15"/>
+                </constraint>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VcH-lA-FYq" secondAttribute="trailing" constant="20" id="bzC-8G-pgU"/>
-                <constraint firstItem="knW-qo-G7R" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="dJs-Jd-FTC"/>
+                <constraint firstItem="knW-qo-G7R" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="dJs-Jd-FTC">
+                    <variation key="heightClass=compact-widthClass=regular" constant="-30"/>
+                </constraint>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RkQ-Ud-2pT" secondAttribute="trailing" constant="77" id="ing-SG-Oz1"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="VcH-lA-FYq" secondAttribute="bottom" constant="50" id="kIv-U2-qwV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="VcH-lA-FYq" secondAttribute="bottom" constant="50" id="kIv-U2-qwV">
+                    <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                </constraint>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="f9K-QN-u51" secondAttribute="trailing" constant="20" id="nl1-ex-Weq"/>
             </constraints>
             <point key="canvasLocation" x="130.53435114503816" y="-12.67605633802817"/>

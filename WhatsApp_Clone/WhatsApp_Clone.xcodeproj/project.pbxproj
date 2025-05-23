@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		AD1E80212DDF114400C0DA87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E80202DDF114400C0DA87 /* AppDelegate.swift */; };
 		AD1E80232DDF114400C0DA87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E80222DDF114400C0DA87 /* SceneDelegate.swift */; };
-		AD1E80252DDF114400C0DA87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E80242DDF114400C0DA87 /* ViewController.swift */; };
+		AD1E80252DDF114400C0DA87 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E80242DDF114400C0DA87 /* ChatViewController.swift */; };
 		AD1E80282DDF114400C0DA87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1E80262DDF114400C0DA87 /* Main.storyboard */; };
 		AD1E802A2DDF114600C0DA87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD1E80292DDF114600C0DA87 /* Assets.xcassets */; };
 		AD1E802D2DDF114600C0DA87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1E802B2DDF114600C0DA87 /* LaunchScreen.storyboard */; };
@@ -20,6 +20,8 @@
 		AD1E804B2DDF2E9600C0DA87 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E80492DDF2E9600C0DA87 /* WelcomeScreenViewController.swift */; };
 		AD1E804C2DDF2E9600C0DA87 /* WelcomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD1E804A2DDF2E9600C0DA87 /* WelcomeScreenViewController.xib */; };
 		AD1E804E2DDF471500C0DA87 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E804D2DDF471500C0DA87 /* DataModel.swift */; };
+		AD22D6A42DE07EF50099B4C2 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22D6A22DE07EF50099B4C2 /* ChatTableViewCell.swift */; };
+		AD22D6A52DE07EF50099B4C2 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD22D6A32DE07EF50099B4C2 /* ChatTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,7 +42,7 @@
 		AD1E801D2DDF114400C0DA87 /* WhatsApp_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsApp_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD1E80202DDF114400C0DA87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD1E80222DDF114400C0DA87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AD1E80242DDF114400C0DA87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD1E80242DDF114400C0DA87 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		AD1E80272DDF114400C0DA87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD1E80292DDF114600C0DA87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD1E802C2DDF114600C0DA87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +52,8 @@
 		AD1E80492DDF2E9600C0DA87 /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
 		AD1E804A2DDF2E9600C0DA87 /* WelcomeScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeScreenViewController.xib; sourceTree = "<group>"; };
 		AD1E804D2DDF471500C0DA87 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		AD22D6A22DE07EF50099B4C2 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		AD22D6A32DE07EF50099B4C2 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,9 +117,10 @@
 		AD1E803F2DDF18DF00C0DA87 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AD22D6A12DE07EC40099B4C2 /* ChatTableViewCell */,
 				AD1E80482DDF2E8300C0DA87 /* WelcomeScreen */,
 				AD1E80432DDF19CF00C0DA87 /* Login_Registor */,
-				AD1E80242DDF114400C0DA87 /* ViewController.swift */,
+				AD1E80242DDF114400C0DA87 /* ChatViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,6 +158,15 @@
 				AD1E804A2DDF2E9600C0DA87 /* WelcomeScreenViewController.xib */,
 			);
 			path = WelcomeScreen;
+			sourceTree = "<group>";
+		};
+		AD22D6A12DE07EC40099B4C2 /* ChatTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AD22D6A22DE07EF50099B4C2 /* ChatTableViewCell.swift */,
+				AD22D6A32DE07EF50099B4C2 /* ChatTableViewCell.xib */,
+			);
+			path = ChatTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD1E804C2DDF2E9600C0DA87 /* WelcomeScreenViewController.xib in Resources */,
+				AD22D6A52DE07EF50099B4C2 /* ChatTableViewCell.xib in Resources */,
 				AD1E802D2DDF114600C0DA87 /* LaunchScreen.storyboard in Resources */,
 				AD1E802A2DDF114600C0DA87 /* Assets.xcassets in Resources */,
 				AD1E80282DDF114400C0DA87 /* Main.storyboard in Resources */,
@@ -235,10 +250,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD1E80252DDF114400C0DA87 /* ViewController.swift in Sources */,
+				AD1E80252DDF114400C0DA87 /* ChatViewController.swift in Sources */,
 				AD1E80462DDF27AA00C0DA87 /* LoginRegistorViewController.swift in Sources */,
 				AD1E80212DDF114400C0DA87 /* AppDelegate.swift in Sources */,
 				AD1E804B2DDF2E9600C0DA87 /* WelcomeScreenViewController.swift in Sources */,
+				AD22D6A42DE07EF50099B4C2 /* ChatTableViewCell.swift in Sources */,
 				AD1E804E2DDF471500C0DA87 /* DataModel.swift in Sources */,
 				AD1E80232DDF114400C0DA87 /* SceneDelegate.swift in Sources */,
 			);
