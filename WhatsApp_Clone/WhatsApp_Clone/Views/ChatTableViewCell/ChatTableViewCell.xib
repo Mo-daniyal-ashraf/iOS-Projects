@@ -27,23 +27,45 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="asxdcsdcs ndc d c dsc dfhv dfvhjdf vfguibvf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bU3-pX-X0N">
-                                <rect key="frame" x="73" y="17" width="168" height="20.333333333333329"/>
+                                <rect key="frame" x="73.000000000000014" y="17" width="158.33333333333337" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:23AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d16-Mn-xbo">
-                                <rect key="frame" x="256" y="20" width="49" height="14.333333333333336"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                <rect key="frame" x="246.33333333333334" y="20" width="58.666666666666657" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                 <color key="textColor" red="0.5725490196078431" green="0.59215686274509804" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:23AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qg-JX-35e">
-                                <rect key="frame" x="70" y="43" width="235" height="17"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <rect key="frame" x="70" y="40.666666666666664" width="200" height="19.333333333333336"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="yCE-4Z-haJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                 <color key="textColor" red="0.57254901960000004" green="0.59215686270000001" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kvY-h0-cww">
+                                <rect key="frame" x="285" y="40" width="20" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkF-cM-dhh">
+                                        <rect key="frame" x="0.0" y="4" width="20" height="12"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.14509803921568626" green="0.82745098039215681" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="LkF-cM-dhh" firstAttribute="leading" secondItem="kvY-h0-cww" secondAttribute="leading" id="8a6-jD-mQU"/>
+                                    <constraint firstAttribute="width" constant="20" id="JKr-tq-1fF"/>
+                                    <constraint firstAttribute="trailing" secondItem="LkF-cM-dhh" secondAttribute="trailing" id="PPW-fl-z67"/>
+                                    <constraint firstAttribute="height" constant="20" id="Qie-TB-rDM"/>
+                                    <constraint firstItem="LkF-cM-dhh" firstAttribute="centerY" secondItem="kvY-h0-cww" secondAttribute="centerY" id="u2L-cJ-otm"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -51,10 +73,11 @@
                             <constraint firstItem="RAH-R5-bN4" firstAttribute="centerY" secondItem="ANj-ck-g3N" secondAttribute="centerY" id="Gvh-lX-Bfa"/>
                             <constraint firstItem="5qg-JX-35e" firstAttribute="leading" secondItem="RAH-R5-bN4" secondAttribute="trailing" constant="15" id="HF0-Qe-r66"/>
                             <constraint firstItem="RAH-R5-bN4" firstAttribute="leading" secondItem="ANj-ck-g3N" secondAttribute="leading" constant="10" id="LEQ-Fu-Nee"/>
-                            <constraint firstAttribute="trailing" secondItem="5qg-JX-35e" secondAttribute="trailing" constant="15" id="NKa-ic-Kna"/>
                             <constraint firstItem="bU3-pX-X0N" firstAttribute="top" secondItem="ANj-ck-g3N" secondAttribute="top" constant="17" id="UeS-hU-tnX"/>
+                            <constraint firstAttribute="trailing" secondItem="kvY-h0-cww" secondAttribute="trailing" constant="15" id="VgC-Ph-dOa"/>
                             <constraint firstItem="d16-Mn-xbo" firstAttribute="top" secondItem="ANj-ck-g3N" secondAttribute="top" constant="20" id="aSb-jy-XhU"/>
                             <constraint firstItem="d16-Mn-xbo" firstAttribute="leading" secondItem="bU3-pX-X0N" secondAttribute="trailing" constant="15" id="aoZ-ne-k5D"/>
+                            <constraint firstAttribute="bottom" secondItem="kvY-h0-cww" secondAttribute="bottom" constant="14" id="f8w-Ha-kCT"/>
                             <constraint firstItem="bU3-pX-X0N" firstAttribute="leading" secondItem="RAH-R5-bN4" secondAttribute="trailing" constant="18" id="fuC-M0-yCe"/>
                             <constraint firstAttribute="trailing" secondItem="d16-Mn-xbo" secondAttribute="trailing" constant="15" id="wfp-a1-pcV"/>
                         </constraints>
@@ -73,6 +96,8 @@
                 <outlet property="lastMessageTextLbl" destination="5qg-JX-35e" id="OQ4-S7-4h2"/>
                 <outlet property="lastMessageTimeLbl" destination="d16-Mn-xbo" id="lkB-i5-IuR"/>
                 <outlet property="nameOrPhonelabel" destination="bU3-pX-X0N" id="3Sh-aa-EES"/>
+                <outlet property="newMessageBubbleView" destination="kvY-h0-cww" id="gec-ku-fAv"/>
+                <outlet property="numberUnseenMessageLbl" destination="LkF-cM-dhh" id="ga8-uB-95L"/>
             </connections>
             <point key="canvasLocation" x="132.82442748091603" y="2.1126760563380285"/>
         </tableViewCell>

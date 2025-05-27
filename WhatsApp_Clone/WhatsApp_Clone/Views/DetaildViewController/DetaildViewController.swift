@@ -50,8 +50,25 @@ class DetaildViewController: UIViewController {
             return
         }
         
-        guard let sender = RealmHelper.getUserbyId(id: chatDetails.user1Id),
-              let reciever = RealmHelper.getUserbyId(id: chatDetails.user2Id) else {
+        
+        
+        guard let sender = RealmHelper.getUserbyId(id: RealmHelper.getCurrentUserId()) else {
+            
+            print("curr user not found!")
+            return
+        }
+        
+        var recieverId = ""
+        
+        if sender.id == chatDetails.user1Id {
+            
+            recieverId = chatDetails.user2Id
+        } else {
+            
+            recieverId = chatDetails.user1Id
+        }
+        
+        guard let reciever = RealmHelper.getUserbyId(id: recieverId) else {
             
             print("One or both users not found in Realm")
             return
@@ -187,6 +204,8 @@ extension DetaildViewController: UITableViewDataSource, UITableViewDelegate {
             return UITableViewCell()
         }
         
+        print(message.senderId)
+        print(currentUserId)
         if message.senderId == currentUserId {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "RightMessageTableViewCell", for: indexPath) as! RightMessageTableViewCell

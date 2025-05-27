@@ -25,9 +25,17 @@ class ChatViewController: UIViewController {
         inittialViewSetup()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
     @IBAction func logOutBtn(_ sender: UIButton) {
 
         UserDefaults.standard.removeObject(forKey: "currentUserId")
+        let welcomeVc = WelcomeScreenViewController(nibName: "WelcomeScreenViewController", bundle: nil)
+        self.navigationController?.setViewControllers([welcomeVc], animated: true)
     }
     
     
@@ -53,11 +61,6 @@ extension ChatViewController {
         tableView.rowHeight = 74
         tableView.register(UINib(nibName: "ChatTableViewCell", bundle: nil), forCellReuseIdentifier: "ChatTableViewCell")
         self.addChatView.layer.cornerRadius = addChatView.frame.height / 2
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        
-        tableView.reloadData()
     }
     
     private func getAllChats() {
@@ -100,9 +103,14 @@ extension ChatViewController: UITableViewDataSource, UITableViewDelegate {
         let chat = allChatDataSource[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ChatTableViewCell", for: indexPath) as? ChatTableViewCell
+       
+        cell?.chatDetails = chat
         cell?.configuewCellWithChat(with: chat)
+        
         return cell!
     }
+    
+    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
@@ -113,6 +121,23 @@ extension ChatViewController: UITableViewDataSource, UITableViewDelegate {
         let detailedVC = DetaildViewController(nibName: "DetaildViewController", bundle: nil)
         detailedVC.hidesBottomBarWhenPushed = true
         detailedVC.chatDetails = chat
+     
+        do {
+            let realm = RealmHelper.shared
+            try realm.write {
+                
+                for message in chat.messages {
+                    
+                    if message.senderId != RealmHelper.getCurrentUserId() {
+                        
+                        message.isSeen = true
+                    }
+                }
+            }
+        } catch let error {
+            
+            print(error.localizedDescription)
+        }
         
         self.navigationController?.pushViewController(detailedVC, animated: true)
     }

@@ -52,7 +52,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.43137254901960786" green="0.76078431372549016" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.1450980392" green="0.82745098039999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="5oe-SS-heb"/>
                                     <constraint firstItem="esv-3D-MW4" firstAttribute="leading" secondItem="K6g-pV-dd1" secondAttribute="leading" id="7gr-dB-7ip"/>

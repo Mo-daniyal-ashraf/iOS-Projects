@@ -45,9 +45,9 @@ extension RightMessageTableViewCell {
         
         self.messageTextField.text = message.text
         
-        let date = message.sentAt
-        print(date)
-        self.timeTextField.text = "12:00 AM"
-        // 2025-05-27 07:42:40 +0000
+        let formatter = DateFormatter()
+        formatter.dateFormat = "hh:mm a"
+        let formattedTime = formatter.string(from: message.sentAt)
+        self.timeTextField.text = formattedTime
     }
 }

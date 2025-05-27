@@ -31,7 +31,7 @@ extension AddUserViewController {
     
     private func inittialViewSetup() {
         
-        navigationController?.isNavigationBarHidden = false
+        navigationController?.isNavigationBarHidden = true
         tableView.dataSource = self
         tableView.delegate = self
 
