@@ -18,7 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 15)],
             for: .normal
         )
-
         return true
     }
 

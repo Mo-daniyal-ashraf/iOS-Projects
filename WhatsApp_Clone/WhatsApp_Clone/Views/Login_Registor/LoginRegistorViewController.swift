@@ -64,7 +64,9 @@ class LoginRegistorViewController: UIViewController {
             
             print("📂 Realm file path: \(realm.configuration.fileURL!)")
             
-            if realm.objects(User.self).filter("mobileNumber == %@", mobileNumber).first != nil {
+            if let existingUser = realm.objects(User.self).filter("mobileNumber == %@", mobileNumber).first {
+                
+                UserDefaults.standard.set(existingUser.id, forKey: "currentUserId")
                 print("⚠️ User already exists with this mobile number.")
                 return
             }

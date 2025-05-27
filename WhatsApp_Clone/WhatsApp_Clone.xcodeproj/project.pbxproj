@@ -22,6 +22,15 @@
 		AD1E804E2DDF471500C0DA87 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E804D2DDF471500C0DA87 /* DataModel.swift */; };
 		AD22D6A42DE07EF50099B4C2 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22D6A22DE07EF50099B4C2 /* ChatTableViewCell.swift */; };
 		AD22D6A52DE07EF50099B4C2 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD22D6A32DE07EF50099B4C2 /* ChatTableViewCell.xib */; };
+		AD5F406D2DE4993B000A8C63 /* RightMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F406B2DE4993B000A8C63 /* RightMessageTableViewCell.swift */; };
+		AD5F406E2DE4993B000A8C63 /* RightMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD5F406C2DE4993B000A8C63 /* RightMessageTableViewCell.xib */; };
+		AD9DE4422DE4351900B4BC1F /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DE4402DE4351900B4BC1F /* AddUserViewController.swift */; };
+		AD9DE4432DE4351900B4BC1F /* AddUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD9DE4412DE4351900B4BC1F /* AddUserViewController.xib */; };
+		AD9DE4452DE436F800B4BC1F /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DE4442DE436F800B4BC1F /* RealmHelper.swift */; };
+		AD9DE4492DE4566100B4BC1F /* DetaildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DE4472DE4566100B4BC1F /* DetaildViewController.swift */; };
+		AD9DE44A2DE4566100B4BC1F /* DetaildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD9DE4482DE4566100B4BC1F /* DetaildViewController.xib */; };
+		ADD9364E2DE5C6DC006B8906 /* LeftMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD9364C2DE5C6DC006B8906 /* LeftMessageTableViewCell.swift */; };
+		ADD9364F2DE5C6DC006B8906 /* LeftMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADD9364D2DE5C6DC006B8906 /* LeftMessageTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +63,15 @@
 		AD1E804D2DDF471500C0DA87 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		AD22D6A22DE07EF50099B4C2 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		AD22D6A32DE07EF50099B4C2 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
+		AD5F406B2DE4993B000A8C63 /* RightMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightMessageTableViewCell.swift; sourceTree = "<group>"; };
+		AD5F406C2DE4993B000A8C63 /* RightMessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightMessageTableViewCell.xib; sourceTree = "<group>"; };
+		AD9DE4402DE4351900B4BC1F /* AddUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
+		AD9DE4412DE4351900B4BC1F /* AddUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddUserViewController.xib; sourceTree = "<group>"; };
+		AD9DE4442DE436F800B4BC1F /* RealmHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		AD9DE4472DE4566100B4BC1F /* DetaildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaildViewController.swift; sourceTree = "<group>"; };
+		AD9DE4482DE4566100B4BC1F /* DetaildViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetaildViewController.xib; sourceTree = "<group>"; };
+		ADD9364C2DE5C6DC006B8906 /* LeftMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMessageTableViewCell.swift; sourceTree = "<group>"; };
+		ADD9364D2DE5C6DC006B8906 /* LeftMessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftMessageTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +128,7 @@
 		AD1E803E2DDF18CE00C0DA87 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AD1E804D2DDF471500C0DA87 /* DataModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -117,6 +136,10 @@
 		AD1E803F2DDF18DF00C0DA87 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ADD9364B2DE5C6D1006B8906 /* LeftMessageTableViewCell */,
+				AD5F406F2DE49945000A8C63 /* RightMessageTableViewCell */,
+				AD9DE4462DE4564400B4BC1F /* DetaildViewController */,
+				AD9DE43F2DE434EC00B4BC1F /* AddUserViewController */,
 				AD22D6A12DE07EC40099B4C2 /* ChatTableViewCell */,
 				AD1E80482DDF2E8300C0DA87 /* WelcomeScreen */,
 				AD1E80432DDF19CF00C0DA87 /* Login_Registor */,
@@ -128,7 +151,7 @@
 		AD1E80402DDF18F000C0DA87 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				AD1E804D2DDF471500C0DA87 /* DataModel.swift */,
+				AD9DE4442DE436F800B4BC1F /* RealmHelper.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -167,6 +190,42 @@
 				AD22D6A32DE07EF50099B4C2 /* ChatTableViewCell.xib */,
 			);
 			path = ChatTableViewCell;
+			sourceTree = "<group>";
+		};
+		AD5F406F2DE49945000A8C63 /* RightMessageTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AD5F406B2DE4993B000A8C63 /* RightMessageTableViewCell.swift */,
+				AD5F406C2DE4993B000A8C63 /* RightMessageTableViewCell.xib */,
+			);
+			path = RightMessageTableViewCell;
+			sourceTree = "<group>";
+		};
+		AD9DE43F2DE434EC00B4BC1F /* AddUserViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AD9DE4402DE4351900B4BC1F /* AddUserViewController.swift */,
+				AD9DE4412DE4351900B4BC1F /* AddUserViewController.xib */,
+			);
+			path = AddUserViewController;
+			sourceTree = "<group>";
+		};
+		AD9DE4462DE4564400B4BC1F /* DetaildViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AD9DE4472DE4566100B4BC1F /* DetaildViewController.swift */,
+				AD9DE4482DE4566100B4BC1F /* DetaildViewController.xib */,
+			);
+			path = DetaildViewController;
+			sourceTree = "<group>";
+		};
+		ADD9364B2DE5C6D1006B8906 /* LeftMessageTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				ADD9364C2DE5C6DC006B8906 /* LeftMessageTableViewCell.swift */,
+				ADD9364D2DE5C6DC006B8906 /* LeftMessageTableViewCell.xib */,
+			);
+			path = LeftMessageTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,12 +293,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD9DE44A2DE4566100B4BC1F /* DetaildViewController.xib in Resources */,
 				AD1E804C2DDF2E9600C0DA87 /* WelcomeScreenViewController.xib in Resources */,
 				AD22D6A52DE07EF50099B4C2 /* ChatTableViewCell.xib in Resources */,
 				AD1E802D2DDF114600C0DA87 /* LaunchScreen.storyboard in Resources */,
 				AD1E802A2DDF114600C0DA87 /* Assets.xcassets in Resources */,
 				AD1E80282DDF114400C0DA87 /* Main.storyboard in Resources */,
+				AD5F406E2DE4993B000A8C63 /* RightMessageTableViewCell.xib in Resources */,
 				AD1E80472DDF27AA00C0DA87 /* LoginRegistorViewController.xib in Resources */,
+				ADD9364F2DE5C6DC006B8906 /* LeftMessageTableViewCell.xib in Resources */,
+				AD9DE4432DE4351900B4BC1F /* AddUserViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,11 +313,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD9DE4492DE4566100B4BC1F /* DetaildViewController.swift in Sources */,
 				AD1E80252DDF114400C0DA87 /* ChatViewController.swift in Sources */,
 				AD1E80462DDF27AA00C0DA87 /* LoginRegistorViewController.swift in Sources */,
 				AD1E80212DDF114400C0DA87 /* AppDelegate.swift in Sources */,
+				ADD9364E2DE5C6DC006B8906 /* LeftMessageTableViewCell.swift in Sources */,
 				AD1E804B2DDF2E9600C0DA87 /* WelcomeScreenViewController.swift in Sources */,
+				AD9DE4452DE436F800B4BC1F /* RealmHelper.swift in Sources */,
+				AD5F406D2DE4993B000A8C63 /* RightMessageTableViewCell.swift in Sources */,
 				AD22D6A42DE07EF50099B4C2 /* ChatTableViewCell.swift in Sources */,
+				AD9DE4422DE4351900B4BC1F /* AddUserViewController.swift in Sources */,
 				AD1E804E2DDF471500C0DA87 /* DataModel.swift in Sources */,
 				AD1E80232DDF114400C0DA87 /* SceneDelegate.swift in Sources */,
 			);
